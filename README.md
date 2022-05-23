@@ -8,4 +8,4 @@ In this work we consider three types of models for infering $C_t$ from $X_t$: au
 
 By running `train.py` and specifying the `model` argument we can train the desired model. For example, `python train.py --model AR --k_value 2.5 --w_value 4 --num_epochs 40 --num_samps 50000 --run_id 0`, trains the AR(4) model with 40 epochs over 50000 trajectories generated from the Gamma distribution with $k=2.5$. Running this command will save the trained model in `models` directory. 
 
-After the training, we can test a trained model by `python test.py --model AR --k_value 2.5 --w_value 4 --num_samps 10000 --run_id 0`. 
+After the training, we can test a trained model using `test.py` by running the following command `python test.py --model AR --k_value 2.5 --w_value 4 --num_samps 10000 --run_id 0`. 
